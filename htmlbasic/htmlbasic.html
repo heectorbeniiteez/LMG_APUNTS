@@ -1,290 +1,289 @@
-<!DOCTYPE html>
-<html>
-    <body>
-        <head>
-            <center><button><a href="/index.html">Torna Enrere</a></button></center>    
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="description" content="HTML Bàsic Apunts">
-            <meta name="keywords" content="HTML, introducció, etiquetes HTML, taules, llistes, enllaços, formatació text, atributs">
-            <meta name="author" content="Hèctor Benítez Pizarro">
-            <title>HTML BÀSIC</title>
-            <h2>Índex</h2>
-            <ul>
-                <li><a href="#introduccio">Introducció a HTML</a></li>
-                <li><a href="#estructurabasica">Estructura Bàsica d'un Document HTML</a></li>
-                <li><a href="#etiquetesbasiques">Etiquetes Bàsiques</a></li>
-                <li><a href="#elementshtml">Elements HTML i Anidament</a></li>
-                <li><a href="#atributshtml">Atributs HTML</a></li>
-                <li><a href="#textformatat">Text Formatat</a></li>
-                <li><a href="#comentarishtml">Comentaris en HTML</a></li>
-                <li><a href="#insercioimatges">Inserció d'Imatges en HTML</a></li>
-                <li><a href="#enllaçoshtml">Enllaços en HTML</a></li>
-                <li><a href="#llisteshtml">Llistes en HTML</a></li>
-                <li><a href="#taulesbasiqueshtml">Taules Bàsiques amb HTML</a></li>
-                <li><a href="#tauleshtml">Taules amb HTML</a></li>
-            </ul>
+<body>
+    <head>
+        <center><button><a href="/index.html">Torna Enrere</a></button></center>    
 
-            <hr>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="HTML Bàsic Apunts">
+        <meta name="keywords" content="HTML, introducció, etiquetes HTML, taules, llistes, enllaços, formatació text, atributs">
+        <meta name="author" content="Hèctor Benítez Pizarro">
+        <title>HTML BÀSIC</title>
+        <h2>Índex</h2>
+        <ul>
+            <li><a href="#introduccio">Introducció a HTML</a></li>
+            <li><a href="#estructurabasica">Estructura Bàsica d'un Document HTML</a></li>
+            <li><a href="#etiquetesbasiques">Etiquetes Bàsiques</a></li>
+            <li><a href="#elementshtml">Elements HTML i Anidament</a></li>
+            <li><a href="#atributshtml">Atributs HTML</a></li>
+            <li><a href="#textformatat">Text Formatat</a></li>
+            <li><a href="#comentarishtml">Comentaris en HTML</a></li>
+            <li><a href="#insercioimatges">Inserció d'Imatges en HTML</a></li>
+            <li><a href="#enllaçoshtml">Enllaços en HTML</a></li>
+            <li><a href="#llisteshtml">Llistes en HTML</a></li>
+            <li><a href="#taulesbasiqueshtml">Taules Bàsiques amb HTML</a></li>
+            <li><a href="#tauleshtml">Taules amb HTML</a></li>
+        </ul>
 
-            <h2 id="introduccio"><center>Introducció a HTML</center></h2>
-            <p>Què és HTML?</p>
-            <ul>
-                <li><p><b>HTML</b> (HyperText Markup Language) és el llenguatge de marques per crear pàgines web.</p></li>
-                <li><p>Defineix l'estructura de la pàgina amb etiquetes que el navegador interpreta per mostrar contingut.</p></li>
-            </ul>
-            <p><b>Breu Història</b></p>
-            <ul>
-                <li><p>Creat per <b>Tim Berners-Lee el 1991.</b></p></li>
-                <li><p><b>HTML 2.0</b> (1995): Primer estàndard oficial.</p></li>
-                <li><p><b>HTML5</b> (2014): Última versió amb noves funcionalitats com suport per a vídeo, àudio i gràfics.</p></li>
-            </ul>
-            
-            <hr>
-            
-            <h2 id="estructurabasica"><center>Estructura Bàsica d'un Document HTML</center></h2>
-            <p>Estructura General</p>
-            <ul>
-                <li>Un document HTML es basa en una estructura jeràrquica de <b>etiquetes</b> que defineixen les diferents parts d'una pàgina.</li>
-                <li>Cada pàgina HTML segueix una estructura similar, començant pel <i><b>!DOCTYPE</b></i>, seguit de les etiquetes <i><b>html</b></i>, <b><i>head</b></i>, <b><i>body</b></i>.</li>
-            </ul>
-                <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 183540.png" alt="Captura de Pantalla" style="width: 35%;"></center>
-            <hr>
-            
-            <h2 id="etiquetesbasiques"><center>Etiquetes Bàsiques</center></h2>
-            <ul>
-                <li><h4><b><i>title</i></b></h4></li>
-                    <p>Defineix el títol que apareix a la pestanya del navegador o als resultats dels cercadors.</p>
-                <li><h4><b><i>h1 a h6</i></b></h4></li>
-                    <p>Utilitzats per definir títols i subtítols a la pàgina web.</p>
-                <li><h4><b><i>p</i></b></h4></li>
-                    <p>S’utilitza per definir blocs de text o paràgrafs.</p>
-                <li><h4><b><i>br</i></b></h4></li>
-                    <p>Força el text a començar en una nova línia.</p>
-                <li><h4><b><i>& nbsp;</i></b></h4></li>
-                    <p>Inserta un espai en blanc que no es trenca entre línies.</p>
-            </ul>
-            <img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 184444.png" alt="Captura de Pantalla" style="width: 35%;">
+        <hr>
 
-            <hr>
+        <h2 id="introduccio"><center>Introducció a HTML</center></h2>
+        <p>Què és HTML?</p>
+        <ul>
+            <li><p><b>HTML</b> (HyperText Markup Language) és el llenguatge de marques per crear pàgines web.</p></li>
+            <li><p>Defineix l'estructura de la pàgina amb etiquetes que el navegador interpreta per mostrar contingut.</p></li>
+        </ul>
+        <p><b>Breu Història</b></p>
+        <ul>
+            <li><p>Creat per <b>Tim Berners-Lee el 1991.</b></p></li>
+            <li><p><b>HTML 2.0</b> (1995): Primer estàndard oficial.</p></li>
+            <li><p><b>HTML5</b> (2014): Última versió amb noves funcionalitats com suport per a vídeo, àudio i gràfics.</p></li>
+        </ul>
+        
+        <hr>
+        
+        <h2 id="estructurabasica"><center>Estructura Bàsica d'un Document HTML</center></h2>
+        <p>Estructura General</p>
+        <ul>
+            <li>Un document HTML es basa en una estructura jeràrquica de <b>etiquetes</b> que defineixen les diferents parts d'una pàgina.</li>
+            <li>Cada pàgina HTML segueix una estructura similar, començant pel <i><b>!DOCTYPE</b></i>, seguit de les etiquetes <i><b>html</b></i>, <b><i>head</b></i>, <b><i>body</b></i>.</li>
+        </ul>
+            <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 183540.png" alt="Captura de Pantalla" style="width: 35%;"></center>
+        <hr>
+        
+        <h2 id="etiquetesbasiques"><center>Etiquetes Bàsiques</center></h2>
+        <ul>
+            <li><h4><b><i>title</i></b></h4></li>
+                <p>Defineix el títol que apareix a la pestanya del navegador o als resultats dels cercadors.</p>
+            <li><h4><b><i>h1 a h6</i></b></h4></li>
+                <p>Utilitzats per definir títols i subtítols a la pàgina web.</p>
+            <li><h4><b><i>p</i></b></h4></li>
+                <p>S’utilitza per definir blocs de text o paràgrafs.</p>
+            <li><h4><b><i>br</i></b></h4></li>
+                <p>Força el text a començar en una nova línia.</p>
+            <li><h4><b><i>& nbsp;</i></b></h4></li>
+                <p>Inserta un espai en blanc que no es trenca entre línies.</p>
+        </ul>
+        <img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 184444.png" alt="Captura de Pantalla" style="width: 35%;">
 
-            <h2 id="elementshtml"><center>Elements HTML i Anidament</center></h2>
-            <p><b>Diferència entre Etiquetes i Elements</b></p>
-            <center><table border="1" cellpadding="10" cellspacing="5">
-                <tr>
-                    <td><b>Etiqueta (Tag):</b></td>
-                    <td><b>Element:</b></td>
-                </tr>
-                <tr>
-                    <td>És la part que defineix l'inici i el final d'un
-                        component en HTML.</td>
-                    <td>Un <b>element</b> inclou l’etiqueta d’obertura, el contingut (si n’hi ha), i l’etiqueta de tancament.</td>
-                </tr>
-                <tr>
-                    <td>Es delimita amb els símbols <b><i>< ></b></i>.
-                        <br>Exemples: <b><i>p</b></i>, <b><i>/p</b></i>, <b><i>h1</b></i>, <b><i>/h1</b></i>.</td>
-                    <td>Els elements poden ser buits o contenir altres elements dins.</td>
-                </tr>
-                <tr>
-                    <td><center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 190906.png" alt="Captura de Pantalla" style="width: 45%;"></center></td>
-                    <td><center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 190934.png" alt="Captura de Pantalla" style="width: 45%;"></center></td>
-                </tr>                
-            </table></center>
-            <p><b>Elements Anidats</b></p>
-            <ul>
-                <li>Anidament es refereix a col·locar un element HTML dins d’un altre element.</li>
-                <li>És important seguir correctament l'ordre de les etiquetes: la primera que s'obre és l'última que es tanca.</li>
-            </ul>
-            <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 191959.png" alt="Captura de Pantalla" style="width: 45%;"></center>        
-            <hr>
-            
-            <h2 id="atributshtml"><center>Atributs HTML</center></h2>
-            <p>Els atributs en HTML són elements que afegeixen informació extra a les etiquetes HTML per modificar-ne el comportament o l'aparença. Aquests atributs sempre es col·loquen dins de l'etiqueta d'obertura i segueixen el format <b>nom="valor"</b>.</p>
-            <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 193010.png" alt="Captura de Pantalla" style="width: 45%;"></center>
-            <hr> 
-            
-            <h2 id="textformatat"><center>Text Formatat</center></h2>
-            <p></p>
-           
-            <hr> 
-           
-            <h2 id="comentarishtml"><center>Comentaris en HTML</center></h2>
-            <ul>
-                <li>Els <b>comentaris</b> en HTML són línies de text que s'afegeixen al codi per deixar notes o explicacions, però que <b>no són visibles</b> per als usuaris finals en la pàgina web.</li>
-                <li>S’utilitzen per ajudar els desenvolupadors a <b>documentar el codi</b>, descriure seccions específiques o deixar indicacions per a futurs desenvolupadors.</li>
-                <li>Els comentaris <b>no afecten el rendiment ni la visualització</b> de la pàgina en el navegador.</li>
-            </ul>
-            <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 193320.png" alt="Captura de Pantalla" style="width: 65%;"></center>
-           
-            <hr>  
-           
-            <h2 id="insercioimatges"><center>Inserció d'Imatges en HTML</center></h2>
-            <ul>
-                <li>L'etiqueta <b><i>img</i></b> s'utilitza per inserir imatges en una pàgina web.</li>
-                <li><i><b>No té etiqueta de tancament</i></b>, ja que és un element auto-tancat.</li>
-                <li>És essencial proporcionar informació sobre la imatge perquè es mostri correctament i per millorar l'accessibilitat.</li>
-            </ul>
-            <p><b>Atributs d’Imatges:</b></p>
-            <ol>
-                <li><b>src (source):</b></li>
-                <ul>
-                    <li>Defineix la <b>font</b> o el camí de la imatge.</li>
-                    <li>Pot ser un camí relatiu o una URL completa.</li>
-                </ul>
-                <li><b>alt (alternate text):</b></li>
-                <ul>
-                    <li>Proporciona un <b>text alternatiu</b> que es mostra si la imatge no es carrega o és llegida per lectors de pantalla.</li>
-                    <li>És fonamental per a l’<b>accessibilitat</b> i SEO.</li>
-                </ul>
-                <li><b>width i height:</b></li>
-                <ul>
-                    <li>Especifica l'<b>amplada</b> (width) i l'<b>alçada</b> (height) de la imatge en píxels o percentatges.</li>
-                    <li>És important per controlar la mida de la imatge a la pàgina.</li>
-                </ul>
-            </ol>
-            <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 193455.png" alt="Captura de Pantalla" style="width: 65%;"></center>
+        <hr>
 
-            <hr>
-           
-            <h2 id="enllaçoshtml"><center>Enllaços en HTML</center></h2>
+        <h2 id="elementshtml"><center>Elements HTML i Anidament</center></h2>
+        <p><b>Diferència entre Etiquetes i Elements</b></p>
+        <center><table border="1" cellpadding="10" cellspacing="5">
+            <tr>
+                <td><b>Etiqueta (Tag):</b></td>
+                <td><b>Element:</b></td>
+            </tr>
+            <tr>
+                <td>És la part que defineix l'inici i el final d'un
+                    component en HTML.</td>
+                <td>Un <b>element</b> inclou l’etiqueta d’obertura, el contingut (si n’hi ha), i l’etiqueta de tancament.</td>
+            </tr>
+            <tr>
+                <td>Es delimita amb els símbols <b><i>< ></b></i>.
+                    <br>Exemples: <b><i>p</b></i>, <b><i>/p</b></i>, <b><i>h1</b></i>, <b><i>/h1</b></i>.</td>
+                <td>Els elements poden ser buits o contenir altres elements dins.</td>
+            </tr>
+            <tr>
+                <td><center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 190906.png" alt="Captura de Pantalla" style="width: 45%;"></center></td>
+                <td><center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 190934.png" alt="Captura de Pantalla" style="width: 45%;"></center></td>
+            </tr>                
+        </table></center>
+        <p><b>Elements Anidats</b></p>
+        <ul>
+            <li>Anidament es refereix a col·locar un element HTML dins d’un altre element.</li>
+            <li>És important seguir correctament l'ordre de les etiquetes: la primera que s'obre és l'última que es tanca.</li>
+        </ul>
+        <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 191959.png" alt="Captura de Pantalla" style="width: 45%;"></center>        
+        <hr>
+        
+        <h2 id="atributshtml"><center>Atributs HTML</center></h2>
+        <p>Els atributs en HTML són elements que afegeixen informació extra a les etiquetes HTML per modificar-ne el comportament o l'aparença. Aquests atributs sempre es col·loquen dins de l'etiqueta d'obertura i segueixen el format <b>nom="valor"</b>.</p>
+        <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 193010.png" alt="Captura de Pantalla" style="width: 45%;"></center>
+        <hr> 
+        
+        <h2 id="textformatat"><center>Text Formatat</center></h2>
+        <p></p>
+       
+        <hr> 
+       
+        <h2 id="comentarishtml"><center>Comentaris en HTML</center></h2>
+        <ul>
+            <li>Els <b>comentaris</b> en HTML són línies de text que s'afegeixen al codi per deixar notes o explicacions, però que <b>no són visibles</b> per als usuaris finals en la pàgina web.</li>
+            <li>S’utilitzen per ajudar els desenvolupadors a <b>documentar el codi</b>, descriure seccions específiques o deixar indicacions per a futurs desenvolupadors.</li>
+            <li>Els comentaris <b>no afecten el rendiment ni la visualització</b> de la pàgina en el navegador.</li>
+        </ul>
+        <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 193320.png" alt="Captura de Pantalla" style="width: 65%;"></center>
+       
+        <hr>  
+       
+        <h2 id="insercioimatges"><center>Inserció d'Imatges en HTML</center></h2>
+        <ul>
+            <li>L'etiqueta <b><i>img</i></b> s'utilitza per inserir imatges en una pàgina web.</li>
+            <li><i><b>No té etiqueta de tancament</i></b>, ja que és un element auto-tancat.</li>
+            <li>És essencial proporcionar informació sobre la imatge perquè es mostri correctament i per millorar l'accessibilitat.</li>
+        </ul>
+        <p><b>Atributs d’Imatges:</b></p>
+        <ol>
+            <li><b>src (source):</b></li>
             <ul>
-                <li>L'etiqueta <b><i>a</i></b> s'utilitza per crear enllaços (links) a altres pàgines web, documents, seccions dins de la mateixa pàgina o qualsevol altre recurs.</li>
-                <li>L’element essencial per als enllaços és l’atribut <b>href</b> que defineix l’URL a la qual redirigeix l’usuari.</li>
-                <li>El text entre l’etiqueta d'obertura i la de tancament és el que els usuaris veuran i podran clicar per ser redirigits.</li>
+                <li>Defineix la <b>font</b> o el camí de la imatge.</li>
+                <li>Pot ser un camí relatiu o una URL completa.</li>
             </ul>
-            <p><b>Atributs d’Enllaços:</b></p>
-            <ol>
-                <li><b>href (hypertext reference):</b></li>
-                <ul>
-                    <li>Defineix la <b>URL</b> de destinació de l'enllaç.</li>
-                    <li>Pot ser un enllaç absolut (una URL completa) o relatiu (camí dins del mateix domini).</li>
-                </ul>
-                <li><b>target:</b></li>
-                <ul>
-                    <li>Defineix <b>on s’obrirà</b> l’enllaç: a la mateixa pestanya, en una nova pestanya o en un nou marc.</li>
-                    <li>Els valors més habituals són:</li>
-                    <ul>
-                        <li><b>_blank</b>: Obre l'enllaç en una <b>nova pestanya</b>.</li>
-                        <li><b>_self</b>: Obre l'enllaç a la <b>mateixa pestanya</b> (valor predeterminat).</li>
-                    </ul>
-                </ul>
-                <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 232910.png" alt="Captura de Pantalla" style="width: 65%;"></center>
-            </ol>
-            <hr>
-           
-            <h2 id="llisteshtml"><center>Llistes en HTML</center></h2>
-            <center><table border="1" cellpadding="10" cellspacing="5">
-                <tr>
-                    <td><b>Llistes No Ordenades (ul):</b></td>
-                    <td><b>Llistes Ordenades (ol):</b></td>
-                </tr>
-                <tr>
-                    <td>S'utilitzen per a llistes d’elements sense un ordre
-                        específic.</td>
-                    <td>S’utilitzen per a llistes en què l'ordre dels
-                        elements és rellevant.</td>
-                </tr>
-                <tr>
-                    <td>Els elements es mostren amb vinyetes o altres
-                        símbols abans de cada ítem.</td>.
-                    <td>Els elements es numeren automàticament (1, 2,
-                        3, etc.).</td>
-                </tr>
-                <tr>
-                    <td>Cada element de la llista es defineix amb l’etiqueta
-                        <b>li</b> (list item).</td>.
-                    <td>Cada element de la llista també es defineix amb
-                        <b>li</b>.</td>
-                </tr>
-                <tr>
-                    <td><center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 233334.png" alt="Captura de Pantalla" style="width: 65%;"></center></td>
-                    <td><center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 233401.png" alt="Captura de Pantalla" style="width: 65%;"></center></td>
-                </tr>                
-            </table></center>
-            <h3>Atributs de llistes:</h3>
-            <b>Atribut type (per a llistes ordenades <b>ol</b>):</b>
+            <li><b>alt (alternate text):</b></li>
             <ul>
-                <li>Es pot utilitzar per definir el tipus de numeració de la llista:</li>
+                <li>Proporciona un <b>text alternatiu</b> que es mostra si la imatge no es carrega o és llegida per lectors de pantalla.</li>
+                <li>És fonamental per a l’<b>accessibilitat</b> i SEO.</li>
+            </ul>
+            <li><b>width i height:</b></li>
+            <ul>
+                <li>Especifica l'<b>amplada</b> (width) i l'<b>alçada</b> (height) de la imatge en píxels o percentatges.</li>
+                <li>És important per controlar la mida de la imatge a la pàgina.</li>
+            </ul>
+        </ol>
+        <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 193455.png" alt="Captura de Pantalla" style="width: 65%;"></center>
+
+        <hr>
+       
+        <h2 id="enllaçoshtml"><center>Enllaços en HTML</center></h2>
+        <ul>
+            <li>L'etiqueta <b><i>a</i></b> s'utilitza per crear enllaços (links) a altres pàgines web, documents, seccions dins de la mateixa pàgina o qualsevol altre recurs.</li>
+            <li>L’element essencial per als enllaços és l’atribut <b>href</b> que defineix l’URL a la qual redirigeix l’usuari.</li>
+            <li>El text entre l’etiqueta d'obertura i la de tancament és el que els usuaris veuran i podran clicar per ser redirigits.</li>
+        </ul>
+        <p><b>Atributs d’Enllaços:</b></p>
+        <ol>
+            <li><b>href (hypertext reference):</b></li>
+            <ul>
+                <li>Defineix la <b>URL</b> de destinació de l'enllaç.</li>
+                <li>Pot ser un enllaç absolut (una URL completa) o relatiu (camí dins del mateix domini).</li>
+            </ul>
+            <li><b>target:</b></li>
+            <ul>
+                <li>Defineix <b>on s’obrirà</b> l’enllaç: a la mateixa pestanya, en una nova pestanya o en un nou marc.</li>
+                <li>Els valors més habituals són:</li>
                 <ul>
-                    <li><b>1</b>: Nombres (predeterminat).</li>
-                    <li><b>A</b>: Majúscules.</li>
-                    <li><b>a</b>: Minúscules.</li>
-                    <li><b>I</b>: Números romans en majúscules.</li>
-                    <li><b>i</b>: Números romans en minúscules.</li>
+                    <li><b>_blank</b>: Obre l'enllaç en una <b>nova pestanya</b>.</li>
+                    <li><b>_self</b>: Obre l'enllaç a la <b>mateixa pestanya</b> (valor predeterminat).</li>
                 </ul>
             </ul>
-            <b>Atribut start (per a llistes ordenades ol):</b>
+            <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 232910.png" alt="Captura de Pantalla" style="width: 65%;"></center>
+        </ol>
+        <hr>
+       
+        <h2 id="llisteshtml"><center>Llistes en HTML</center></h2>
+        <center><table border="1" cellpadding="10" cellspacing="5">
+            <tr>
+                <td><b>Llistes No Ordenades (ul):</b></td>
+                <td><b>Llistes Ordenades (ol):</b></td>
+            </tr>
+            <tr>
+                <td>S'utilitzen per a llistes d’elements sense un ordre
+                    específic.</td>
+                <td>S’utilitzen per a llistes en què l'ordre dels
+                    elements és rellevant.</td>
+            </tr>
+            <tr>
+                <td>Els elements es mostren amb vinyetes o altres
+                    símbols abans de cada ítem.</td>.
+                <td>Els elements es numeren automàticament (1, 2,
+                    3, etc.).</td>
+            </tr>
+            <tr>
+                <td>Cada element de la llista es defineix amb l’etiqueta
+                    <b>li</b> (list item).</td>.
+                <td>Cada element de la llista també es defineix amb
+                    <b>li</b>.</td>
+            </tr>
+            <tr>
+                <td><center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 233334.png" alt="Captura de Pantalla" style="width: 65%;"></center></td>
+                <td><center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 233401.png" alt="Captura de Pantalla" style="width: 65%;"></center></td>
+            </tr>                
+        </table></center>
+        <h3>Atributs de llistes:</h3>
+        <b>Atribut type (per a llistes ordenades <b>ol</b>):</b>
+        <ul>
+            <li>Es pot utilitzar per definir el tipus de numeració de la llista:</li>
             <ul>
-                <li>Defineix el número o lletra per començar la
-                    numeració.</li>
+                <li><b>1</b>: Nombres (predeterminat).</li>
+                <li><b>A</b>: Majúscules.</li>
+                <li><b>a</b>: Minúscules.</li>
+                <li><b>I</b>: Números romans en majúscules.</li>
+                <li><b>i</b>: Números romans en minúscules.</li>
             </ul>
-            <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 233939.png" alt="Captura de Pantalla" style="width: 65%;"></center>
-            <hr>
-           
-            <h2 id="taulesbasiqueshtml"><center>Taules Bàsiques amb HTML</center></h2>
-            <p><b>Etiqueta <b><i>table</i></b>:</b></p>
-            <ol>
-                <li>L’etiqueta <b><i>table</i></b> defineix la taula i
-                    actua com el contenidor principal.</li>
-            </ol>
-            <p><b>Etiqueta <b><i>tr</i></b>(table row):</b></p>
-            <ol>
-                <li>Defineix una <b>fila</b> dins de la taula.</li>
-            </ol>
-            <p><b>Etiqueta <b><i>td</i></b>(table data):</b></p>
-            <ol>
-                <li>Crea una <b>cel·la</b> dins d’una fila de la
-                    taula (dades de la taula).</li>
-            </ol>
-            <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 234437.png" alt="Captura de Pantalla" style="width: 45%;"></center>
-            
-            <p><b>Atributs de Taula:</b></p>
-            <ol>
-                <li><b>border</b></li>
-                <ul>
-                    <li>Afegeix una vora a la taula i a les cel·les.</li>
-                </ul>
-            </ol>
-            <p><b>Atributs de Taula:</b></p>
-            <ol>
-                <li><b>cellpadding:</b></li>
-                <ul>
-                    <li>Defineix l’<b>espai</b> entre el contingut de la cel·la i
-                        la vora de la cel·la.</li>
-                </ul>
-            </ol>
-            <p><b>Atributs de Taula:</b></p>
-            <ol>
-                <li><b>cellspacing:</b></li>
-                <ul>
-                    <li>Controla l'<b>espai</b> entre les cel·les de la taula.</li>
-                </ul>
-            </ol>
-            <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 234733.png" alt="Captura de Pantalla" style="width: 45%;"></center>
-            
-            <hr>
-           
-            <h2 id="tauleshtml"><center>Taules amb HTML</center></h2>
-            <p><b>Etiqueta <b><i>thead</i></b> (table head):</b></p>
+        </ul>
+        <b>Atribut start (per a llistes ordenades ol):</b>
+        <ul>
+            <li>Defineix el número o lletra per començar la
+                numeració.</li>
+        </ul>
+        <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 233939.png" alt="Captura de Pantalla" style="width: 65%;"></center>
+        <hr>
+       
+        <h2 id="taulesbasiqueshtml"><center>Taules Bàsiques amb HTML</center></h2>
+        <p><b>Etiqueta <b><i>table</i></b>:</b></p>
+        <ol>
+            <li>L’etiqueta <b><i>table</i></b> defineix la taula i
+                actua com el contenidor principal.</li>
+        </ol>
+        <p><b>Etiqueta <b><i>tr</i></b>(table row):</b></p>
+        <ol>
+            <li>Defineix una <b>fila</b> dins de la taula.</li>
+        </ol>
+        <p><b>Etiqueta <b><i>td</i></b>(table data):</b></p>
+        <ol>
+            <li>Crea una <b>cel·la</b> dins d’una fila de la
+                taula (dades de la taula).</li>
+        </ol>
+        <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 234437.png" alt="Captura de Pantalla" style="width: 45%;"></center>
+        
+        <p><b>Atributs de Taula:</b></p>
+        <ol>
+            <li><b>border</b></li>
             <ul>
-                <li><b>Defineix l’encapçalament de la taula, agrupant les
-                    files d'encapçalament (habitualment les que
-                    contenen th).</b></li>
+                <li>Afegeix una vora a la taula i a les cel·les.</li>
             </ul>
-            <p><b>Etiqueta <b><i>tbody</i></b> (table body):</b></p>
+        </ol>
+        <p><b>Atributs de Taula:</b></p>
+        <ol>
+            <li><b>cellpadding:</b></li>
             <ul>
-                <li><b>Agrupa el cos de la taula, és a dir, les files de
-                    dades. Se sol fer servir per separar les dades dels
-                    encapçalaments.</b></li>
-            </ul>            
-            <p><b>Etiqueta <b><i>th</i></b> (table header):</b></p>
-            <ul>
-                <li><b>S’utilitza per crear una cel·la d'encapçalament en
-                    una taula. El text dins de <th> apareix en negreta i
-                    centrat per defecte.</b></li>
+                <li>Defineix l’<b>espai</b> entre el contingut de la cel·la i
+                    la vora de la cel·la.</li>
             </ul>
-            <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 235104.png" alt="Captura de Pantalla" style="width: 45%;"></center>
-            <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 235224.png" alt="Captura de Pantalla" style="width: 45%;"></center>
-        </head>
-    </body>
+        </ol>
+        <p><b>Atributs de Taula:</b></p>
+        <ol>
+            <li><b>cellspacing:</b></li>
+            <ul>
+                <li>Controla l'<b>espai</b> entre les cel·les de la taula.</li>
+            </ul>
+        </ol>
+        <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 234733.png" alt="Captura de Pantalla" style="width: 45%;"></center>
+        
+        <hr>
+       
+        <h2 id="tauleshtml"><center>Taules amb HTML</center></h2>
+        <p><b>Etiqueta <b><i>thead</i></b> (table head):</b></p>
+        <ul>
+            <li><b>Defineix l’encapçalament de la taula, agrupant les
+                files d'encapçalament (habitualment les que
+                contenen th).</b></li>
+        </ul>
+        <p><b>Etiqueta <b><i>tbody</i></b> (table body):</b></p>
+        <ul>
+            <li><b>Agrupa el cos de la taula, és a dir, les files de
+                dades. Se sol fer servir per separar les dades dels
+                encapçalaments.</b></li>
+        </ul>            
+        <p><b>Etiqueta <b><i>th</i></b> (table header):</b></p>
+        <ul>
+            <li><b>S’utilitza per crear una cel·la d'encapçalament en
+                una taula. El text dins de <th> apareix en negreta i
+                centrat per defecte.</b></li>
+        </ul>
+        <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 235104.png" alt="Captura de Pantalla" style="width: 45%;"></center>
+        <center><img src="/imatgeshtmlbasic/Captura de pantalla 2024-10-25 235224.png" alt="Captura de Pantalla" style="width: 45%;"></center>
+    </head>
+</body>
 </html>

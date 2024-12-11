@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="cssavançat.css">
+            <title>CSS AVANÇAT</title>           
+        </head>
+            <h2>Índex</h2>
+        <ul>
+            <li><a href="#cssavançatintroduccio">CSS Avançat: Introducció</a></li>
+            <li><a href="#selectorsavançats">Selectors avançats</a></li>
+            <li><a href="#propietats">Propietats avançades de fonts i tipografia</a></li>
+            <li><a href="#layouts">Layouts avançats amb Flexbox i Grid</a></li>
+            <li><a href="#popover">Popover API</a></li>
+            <li><a href="#variables">Variables CSS (Custom Properties)</a></li>
+            <li><a href="#animacionsitransicions">Animacions i transicions</a></li>
+            <li><a>Disseny atractiu i coherent</a></li>
+            <li><a>UI/UX</a></li>
+            <li><a>Optimització i rendiment</a></li>
+            <li><a>Eines modernes de CSS</a></li>
+        </ul>
+        <hr>
+        <h2 id="cssavançatintroduccio">1. CSS Avançat: Introducció</h2>
+        <h5>A mesura que els projectes web es tornen més complexos, l’ús del CSS també ha d’evolucionar per oferir solucions
+            més adaptatives, eficients i organitzades. El CSS avançat no només se centra en dissenyar una pàgina web atractiva,
+            sinó també en assegurar-se que aquesta pàgina funcioni bé en diversos dispositius, sigui fàcil de mantenir i estigui
+            optimitzada per a un rendiment òptim.</h5>
+        <div class="grid4">
+            <div>
+                    <b>Importància del disseny adaptable i optimitzat</b>
+                    <p>Un dels pilars del CSS avançat és el <b>disseny responsive</b>, que
+                        permet que les pàgines web s'adaptin a diferents mides de
+                        pantalla i dispositius. Aquesta tècnica és cada cop més important
+                        a causa de l'augment de l'ús de dispositius mòbils. Per aconseguir
+                        un disseny adaptatiu, el CSS avançat incorpora tècniques com:</p>
+                        <ol>
+                            <li><b>Media Queries avançade</b></li>
+                            <li><b>Unitats relatives i flexibles</b></li>
+                            <li><b>Layouts responsius amb Flexbox i Grid</b></li>
+                        </ol>
+                </div>
+                <div>
+                    <b>Millors pràctiques d'organització del CSS</b>
+                    <p>A mesura que els projectes es fan més grans, és essencial mantenir
+                        una bona organització del codi CSS per evitar que es torni difícil de
+                        gestionar i mantenir. A continuació, algunes millors pràctiques per a
+                        l'organització del CSS en projectes avançats:</p>
+                        <ol>
+                            <li><b>Modularització del CSS:</b>
+                            <ul>
+                                <li><b>Dividir el codi CSS en fitxers més petits i temàtics</b></li>
+                                <li><b>Arquitectura CSS escalable (SMACSS, BEM)</b></li>
+                            </ul>
+                            <li><b>Pre-processadors CSS:</b>
+                            <ul>
+                                <li>Sass o LESS</li>
+                                </ul></li>
+                            <li><b>Optimització del CSS:</b>
+                            <ul>
+                                <li><b>Minificació del CSS</b></li>
+                                <li><b>Carregament asíncron del CSS</b></li>
+                            </ul></li>
+                            <li><b>Utilització de frameworks CSS:</b>
+                            <ul>
+                                <li><b>Bootstrap</b></li>
+                                <li><b>Tailwind CSS</b></li>
+                            </ul></li>
+                        </ol>
+                </div>
+        </div>
+        <hr>
+                <h2 id="selectorsavançats">2. Selectors avançats en CSS</h2>
+                <h5>Els <b>selectors</b> avançats en CSS permeten aplicar estils amb molta més precisió i flexibilitat, permetent seleccionar
+                    elements específics en funció de la seva posició, relació amb altres elements o atributs.</h5>
+                <h4><u>1. Selectors d'atribut</u></h4>
+                <h4>Els selectors d'atribut permeten aplicar estils als elements HTML que contenen un determinat atribut o valor d'atribut. Són especialment útils per estilitzar
+                    elements de formularis o en casos en què utilitzis atributs personalitzats.</h4>
+                <p><b>Exemples comuns:</b></p>
+                <div class="grid5">
+                    <div class="element6">
+                        <p>Seleccionar elements amb un atribut específic:</p>
+                        <img src="Captura de pantalla 2024-12-08 213051.png ">
+                            <p>En aquest exemple, tots els elements INPUT que tenen
+                                l'atribut type="text" tindran una vora blava.p>
+                    </div>
+                    <div class="element6">
+                        <p>Seleccionar elements amb un atribut que conté un valor específic:</p>
+                        <img src="Captura de pantalla 2024-12-08 213057.png">
+                        <p>Aquest exemple aplica el color verd a tots els enllaços (A)
+                                que contenen la paraula "example" en l'atribut href.</p>
+                        <p>Seleccionar tots els elements amb un atribut:</p>
+                        <img src="Captura de pantalla 2024-12-08 213110.png">
+                        <p>En aquest exemple, tots els elements que tenen l'atribut
+                            personalitzat tindran una vora vermella.</p>                    
+                    </div>
+                    <div class="element6">
+                        <p>Seleccionar elements amb un valor d'atribut que comença amb un valor específic:</p>
+                        <img src="Captura de pantalla 2024-12-08 213102.png">
+                            <p>Això aplica una vora negra a totes les imatges (img) que
+                                tenen una URL src que comença per "https".</p>
+                    </div>
+                </div>
+                <h4><u>2. Selectors combinats</u></h4>
+                <h4>Els selectors combinats permeten seleccionar elements que tenen una relació específica amb altres elements dins del document. Els combinadors més
+                    comuns són:</h4>
+                <div class="grid2">
+                    <div class="element6">
+                        <p><b>a. Combinador de descendents ( )</b></p>
+                        <p>Selecciona tots els elements que són descendents (fills, nets, etc.) d'un element pare.</p>
+                        <img src="Captura de pantalla 2024-12-08 214434.png">
+                            <p>Això aplica el color vermell a tots els paràgrafs (P) que
+                                són descendents de qualsevol element DIV.<p>
+                        <br>
+                        <p><b>c. Combinador de germans adjacents (+)</b></p>
+                        <p><b>Selecciona l'element que està just després</b> d'un altre element germà..</p>
+                        <img src="Captura de pantalla 2024-12-08 214711.png">
+                            <p>Aquest exemple fa que el primer paràgraf (P) que segueix
+                                directament un títol (H1) es mostri en negreta.<p>
+                    </div>
+                    <div class="element6">
+                        <p><b>b. Combinador de fills directes (>)</b></p>
+                        <p><b>Selecciona només els fills directes</b> d'un element pare.</p>
+                        <img src="Captura de pantalla 2024-12-08 214442.png">  
+                        <p>En aquest cas, només els paràgrafs que són fills immediats d'un
+                            DIV tindran el text de color blau. Els nets o altres descendents no
+                            es veuran afectats.<p>    
+                        <BR>   
+                         <p><b>d. Combinador de germans generals (~)</b></p>
+                        <p><b>Selecciona tots els germans</b> que segueixen un element determinat dins del mateix pare.</p>
+                        <img src="Captura de pantalla 2024-12-08 214717.png">  
+                        <p>Aquest exemple fa que tots els paràgrafs (P) que
+                            segueixen un H2 dins del mateix contenidor tinguin el text
+                            de color gris.<p>             
+                    </div>
+                </div>
+                <h4><u>3. Selectors pseudo-classe</u></h4>
+                <h4>Les pseudo-classes són selectors que s'utilitzen per aplicar estils a un element en un estat o condició particular. Això permet canviar l'estil d'un element
+                    quan l'usuari hi interactua o quan l'element compleix certs criteris.</h4>
+                <div class="grid2">
+                    <div class="element6">
+                        <p><b>:hover:</b>Aplica estils quan l'usuari passa el ratolí per sobre de l'element.</p>
+                        <p>Selecciona tots els elements que són descendents (fills, nets, etc.) d'un element pare.</p>
+                        <img src="Captura de pantalla 2024-12-08 220116.png">
+                            <p>Aquest exemple canvia el color d'un enllaç a vermell
+                                quan l'usuari passa el cursor per sobre.<p>
+                        <br>
+                        <p><b>:nth-child():</b>Selecciona elements en funció de la seva posició entre els seus germans.</p>
+                        <p><b>Selecciona l'element que està just després</b> d'un altre element germà..</p>
+                        <img src="Captura de pantalla 2024-12-08 220123.png">
+                            <p>Això aplica un color de fons gris clar a les files imparells d'una taula.<p>
+                    </div>
+                    <div class="element6">
+                        <p><b>:first-of-type:</b>Selecciona el primer element del seu tipus dins del seu pare.</p>
+                        <p><b>Selecciona només els fills directes</b> d'un element pare.</p>
+                        <img src="Captura de pantalla 2024-12-08 220129.png">  
+                        <p>En aquest exemple, el primer paràgraf dins de cada element
+                            pare tindrà el text en negreta.<p>   
+                        <BR>    
+                         <p><b>:not():</b>Selecciona tots els elements excepte aquells que coincideixin amb el selector especificat.</p>
+                        <p><b>Selecciona tots els germans</b> que segueixen un element determinat dins del mateix pare.</p>
+                        <img src="Captura de pantalla 2024-12-08 220134.png">  
+                        <p>Això aplica un color de fons groc a tots els DIV que no
+                            tenen la classe important.<p>             
+                    </div>
+                </div>
+                <h4><u>4. Selectors pseudo-element</u></h4>
+                <h4>Els pseudo-elements permeten aplicar estils a una part específica d'un element, com el seu contingut abans o després, o una línia de text. Els pseudo-
+                    elements més comuns són<b>::before i ::after.</b></h4>
+                <h5><b>::before:</b> Afegeix contingut o estils abans del contingut real d'un element.</h3>
+                <center><img src="Captura de pantalla 2024-12-08 220617.png"></center>
+                <h5>Aquest exemple afegeix una estrella daurada abans de cada H1.</h5>
+                <h5><b>::after:</b> Afegeix contingut o estils després del contingut real d'un element.</h3>
+                <center><img src="Captura de pantalla 2024-12-08 220623.png"></center>
+                <h5>Això afegeix la paraula "(Final)" en gris després de cada paràgraf.</h5>
+            <hr>
+            <h2 id="propietats">3. Fonts i tipografia avançades</h2>
+                <h5>El control de la tipografia en una pàgina web és crucial per garantir una bona llegibilitat i una estètica consistent. En
+                    CSS avançat, tens accés a un conjunt de propietats que et permeten controlar diversos aspectes de les fonts, com la
+                    seva càrrega dinàmica, espaiat, pes, i línies de text. També explorarem com utilitzar fonts personalitzades amb la regla
+                    <b>@font-face.</b></h5>
+                    <div class="grid3">
+                        <div class="element6">
+                            <p><b>1. Tipografies web amb @font-face</b></p>
+                            <p>La regla @font-face permet utilitzar fonts
+                                personalitzades que no estan disponibles al sistema
+                                de l'usuari. Això significa que pots carregar fonts
+                                específiques des del teu servidor o des d'una font
+                                externa com Google Fonts, garantint una coherència
+                                tipogràfica entre tots els usuaris, independentment
+                                del dispositiu o navegador que utilitzin.</p>
+                        </div>
+                        <div class="element6">                        
+                            <img src="Captura de pantalla 2024-12-08 221135.png">
+                        </div>
+                    </div>
+                        <center><h4>Bancs de tipografies</h4></center>
+                        <br>
+                        <div class="grid5">
+                            <div class="element6">
+                                <img src="Captura de pantalla 2024-12-08 221349.png">
+                            </div>
+                            <div class="element6">
+                                <img src="Captura de pantalla 2024-12-08 221356.png">
+                            </div>
+                            <div class="element6">
+                                <img src="Captura de pantalla 2024-12-08 221404.png">
+                            </div>
+                        </div>
+                        <p><b>2. Control avançat de tipografia</b></p>
+                        <h5>A més de definir fonts personalitzades, CSS ofereix propietats avançades per controlar altres aspectes tipogràfics,
+                            com l'espai entre lletres, el gruix de la font o l'alçada de les línies.</h5>
+                        <div class="grid3">
+                            <div class="element6">
+                                <p><b>a. Propietat letter-spacing</b></p>
+                                <p>La propietat letter-spacing permet ajustar l'espai entre
+                                    les lletres d'un text, fent que el text es vegi més
+                                    comprimit o espaiat.</p>
+                                <br>
+                                <p><b>b. Propietat line-height</b></p>
+                                <p>La propietat line-height controla l'alçada de les línies de
+                                    text. Una alçada de línia més gran augmenta l'espai entre
+                                    les línies, cosa que pot millorar la llegibilitat.</p>
+                                <br>
+                                <p><b>c. Propietat font-weight</b></p>
+                                <p>La propietat font-weight controla el gruix del text. A més
+                                    dels valors normal i bold, es poden utilitzar valors
+                                    numèrics entre 100 (molt prim) i 900 (molt gruixut),
+                                    oferint més flexibilitat.</p>
+                                <br>
+                                <p><b>d. Propietat font-style</b></p>
+                                <p>La propietat font-style permet definir si el text es
+                                    mostrarà en estil normal, cursiva o obliqua. És útil per
+                                    donar èmfasi al text.</p>
+                                <br>
+                                <p><b>e. Propietat text-transform</b></p>
+                                <p>Aquesta propietat permet canviar la capitalització del
+                                    text, convertint-lo tot en majúscules, minúscules o
+                                    capitalitzant la primera lletra de cada paraula.</p>
+                                    <p><b>uppercase:</b>Converteix tot el text en majúscules.</p>
+                                    <p><b>lowercase:</b>Converteix tot el text en minúscules.</p>
+                                    <p><b>capitalize:</b>Capitalitza la primera lletra de cada paraula.</p>
+                            </div>
+                            <div class="element6">                        
+                                <img src="Captura de pantalla 2024-12-08 222217.png">                        
+                                <img src="Captura de pantalla 2024-12-08 222222.png">
+                                <img src="Captura de pantalla 2024-12-08 222855.png">
+                                <img src="Captura de pantalla 2024-12-08 222901.png">
+                                <img src="Captura de pantalla 2024-12-08 222907.png">
+                            </div>
+                        </div>
+                    <p><b>3. Ús del Web Open Font Format (WOFF)</b></p>
+                    <h5><b>WOFF i WOFF2</b>>són formats de font comprimits dissenyats específicament per a ús web. Aquests formats
+                        proporcionen una compressió més eficient que els formats tradicionals, millorant el temps de càrrega de les
+                        pàgines sense perdre qualitat tipogràfica. És recomanable utilitzar WOFF2 quan sigui possible, ja que és el format
+                        més modern i optimitzat.</h5>
+                    <center><img src="Captura de pantalla 2024-12-08 223309.png"></center>
+                    <h5>L'exemple carrega la font "Roboto" utilitzant els formats WOFF i WOFF2, garantint compatibilitat amb navegadors
+                        antics i moderns.</h5>
+                    <p><b>Exemple complet de propietats avançades de fonts i tipografia:</b></p>
+                    <div class="grid3">
+                        <div class="element6">
+                            <p>En aquest exemple:</p>
+                            <ul>
+                                <li>Utilitzem la font personalitzada <b>Lato</b> carregada amb WOFF2 i WOFF.</li>
+                                <br>
+                                <li>Les propietats letter-spacing, line-height, i
+                                    font-weight s'utilitzen per controlar l'espaiat
+                                    entre lletres, l'alçada de les línies i el gruix
+                                    de la font.</li>
+                                <br>
+                                <li>text-transform converteix el títol en
+                                    majúscules.</li>
+                            </ul>
+                        </div>
+                        <div class="element6">                        
+                            <img src="Captura de pantalla 2024-12-08 223519.png">                        
+                        </div>
+                    </div>
+                    <hr>
+                <h2 id="layouts">4. Layouts amb Flexbox i Grid</h2>
+                <table border="1" cellpadding="10" cellspacing="5">
+                    <tr>
+                    <td><center><b>Flexbox</b></center>
+                        <center><p>Casos comuns per Flexbox:</p></center>
+                        <ol>
+                            <li>Quan vols alinear elements en fila o columna, com
+                                botons en una barra de navegació o imatges en una
+                                galeria.</li>
+                            <li>Quan vols distribuir l'espai entre elements en una fila
+                                (per exemple, centrant un element o espaiant-los
+                                uniformement).</li>
+                            <li>Quan els elements han de créixer o reduir-se per
+                                omplir l'espai disponible, com en una barra lateral o
+                                una fila de cartes.</li>
+                        </ol>
+                    </td>
+                    <td><center><b>Grid</b></center>
+                        <center><p>Casos comuns per CSS Grid:</p></center>
+                        <ol>
+                            <li>Quan vols crear una pàgina amb una estructura
+                                complexa (com una pàgina amb capçalera, barra
+                                lateral, contingut principal i peu de pàgina).</li>
+                            <li>Quan tens un disseny en format de quadrícula
+                                amb files i columnes, com un tauler de fotos o un
+                                disseny de cartes de productes.</li>
+                            <li>Quan vols controlar exactament on va cada
+                                element en la quadrícula (pots col·locar elements
+                                en qualsevol cel·la de la quadrícula).</li>
+                        </ol>                    
+                    </tr>
+                </table>
+                <p>Quan es tracta de crear dissenys flexibles, adaptables i organitzats, Flexbox i CSS Grid són les dues eines més
+                    poderoses del CSS. Amb elles pots controlar la disposició dels elements en la pàgina, ja sigui en una fila, columna o
+                    en quadrícules complexes, adaptant els elements fàcilment a diferents mides de pantalla i requeriments.</p>
+                <h4>1. Flexbox avançat: alineació, flex-shrink, align-self</h4>
+                <p>Flexbox és una eina molt flexible per crear dissenys en fila o columna, on els elements s’alineen i ajusten automàticament segons l’espai
+                    disponible.</p>
+                <div class="grid2">
+                    <div class="element6">
+                        <p><b>flex-shrink:</b>Controla com es redueix la mida d’un element quan no hi
+                            ha prou espai disponible. Valors més grans permeten que l'element es
+                            redueixi més.</p>
+                        <img src="Captura de pantalla 2024-12-08 224934.png">
+                        <br>
+                    </div>
+                    <div class="element6">
+                        <p><b>align-self:</b>Permet que un sol element en un contenidor flex tingui
+                            una alineació diferent a la resta d’elements. Els valors poden ser
+                            flex-start, flex-end, center, baseline o stretch.</p>
+                        <img src="Captura de pantalla 2024-12-08 224945.png">  
+                    </div>
+                </div>
+                    <p><b>Exemple bàsic amb CSS Grid:</b></p>
+                    <div class="grid3">
+                        <div class="element6">
+                            <p>En aquest exemple:</p>
+                            <ul>
+                                <li>La quadrícula té 3 columnes iguals.</li>
+                                <br>
+                                <li>Les propietats letter-spacing, line-height, i font-weight s'utilitzen per controlar l'espaiat entre lletres, l'alçada de les línies i el gruix de la font.</li>
+                                <br>
+                            </ul>
+                        </div>
+                        <div class="element6">                        
+                            <img src="Captura de pantalla 2024-12-08 225320.png">                        
+                        </div>
+                    </div>
+                    <p><b>3. Ús combinat de Flexbox i Grid</b></p>
+                    <div class="grid3">
+                        <div class="element6">
+                            <p>Tot i que Flexbox i Grid es poden utilitzar per separat, sovint
+                                és útil combinar-los per obtenir el millor de tots dos. Per
+                                exemple, pots utilitzar Grid per definir la disposició general
+                                d'una pàgina (files i columnes) i utilitzar Flexbox dins
+                                d'algunes àrees per ajustar l'alineació dels elements.</p>
+                            <p>En aquest exemple:</p>
+                            <ul>
+                                <li>El layout general s'estructura amb Grid, dividint la
+                                    pàgina en columnes.</li>
+                                <br>
+                                <li>Dins d'una de les cel·les del Grid, s'utilitza Flexbox per
+                                    alinear els elements en una fila.</li>
+                                <br>
+                            </ul>
+                        </div>
+                        <div class="element6">                        
+                            <img src="Captura de pantalla 2024-12-08 225914.png">                        
+                        </div>
+                    </div>
+                <hr>
+                <h2 id="popover">5. Popover API</h2>
+                <h5>La <b>Popover API</b> és una funcionalitat recent que permet als desenvolupadors crear contingut emergent (popovers)
+                    de manera nativa, utilitzant només HTML i CSS, sense necessitat de JavaScript. Aquesta API facilita la creació de
+                    components com menús, suggeriments o notificacions que apareixen sobre el contingut existent.</h5>
+                <p><b>Atributs HTML rellevants</b></p>
+                <p><b>popover:</b>Atribut global que designa un element com a popover.</p>
+                <ul>
+                    <li><b>"auto"</b> (per defecte): El popover es mostra i s'oculta automàticament.</li>
+                    <li><b>"manual":</b>El control de la visibilitat del popover es gestiona manualment.</li>
+                </ul>
+                <p><b>popovertarget:</b> Atribut que especifica l'ID de l'element popover que es controlarà.</p>
+                <p><b>popovertargetaction:</b>Defineix l'acció a realitzar sobre el popover.</p>
+                <ul>
+                    <li><b>"show":</b> Mostra el popover.</li>
+                    <li><b>"hide":</b> Oculta el popover.</li>
+                    <li><b>"toggle":</b> Alterna entre mostrar i ocultar el popover.</li>
+                </ul>
+                <div class="grid3">
+                    <div class="element6">
+                        <p>Explicació de l'exemple:</p>
+                        <ul>
+                            <li>El botó amb la classe trigger té l'atribut
+                                popovertarget que apunta a l'ID popoverContent,
+                                indicant que aquest botó controlarà la visibilitat del
+                                popover.</li>
+                            <br>
+                            <li>El div amb l'ID popoverContent té l'atribut popover,
+                                designant-lo com a contingut emergent.</li>
+                            <br>
+                            <li>Quan l'usuari fa clic al botó, el popover es mostra o
+                                s'oculta automàticament.</li>
+                            <li>L'estil aplicat al pseudo-element ::backdrop crea un
+                                efecte de desenfocament al fons quan el popover
+                                està obert.</li>
+                        </ul>
+                    </div>
+                    <div class="element6">                        
+                        <img src="Captura de pantalla 2024-12-08 230607.png">                        
+                    </div>
+                </div>
+                <hr>
+                <h2 id="variables">6. Variables CSS (Custom Properties)</h2>
+                <h5>Les <b>variables CSS</b>, també conegudes com <b>Custom Properties</b>, permeten definir valors reutilitzables dins d'un
+                    document CSS. Aquesta característica facilita molt la gestió i manteniment de grans fulls d'estil, ja que pots
+                    centralitzar valors com colors, mides i espaiats, i reutilitzar-los en diverses regles CSS. Si necessites fer un canvi en
+                    algun d’aquests valors, només hauràs de modificar la variable en un lloc, i el canvi es propagarà a totes les parts del
+                    document on s'utilitza.</h5>
+                <p><b>1. Definir i utilitzar variables CSS</b></p>
+                <p>Les variables CSS es defineixen dins de qualsevol selector utilitzant el prefix --. És habitual
+                    definir-les en el selector :root per tal que estiguin disponibles globalment en tot el document.</p>
+                <center><img src="Captura de pantalla 2024-12-08 230840.png"></center>
+                <p><b>2. Beneficis de les variables en grans projectes</b></p>
+                <b>L’ús de variables és especialment útil en projectes grans o complexos, on necessites garantir la consistència en
+                    colors, mides, fonts i altres estils. Canviar aquests valors en múltiples llocs manualment pot ser tediós i propens a
+                    errors. Les variables centralitzen aquests valors en un sol lloc.</b>
+                <h4>Avantatges:</h4>
+                <ol>
+                    <li><b>Mantenibilitat:</b> Pots modificar fàcilment valors globals com els colors o les mides canviant només una variable.</li>
+                    <li><b>Reutilització:</b> Les mateixes variables es poden utilitzar en qualsevol lloc del full d’estil, estalviant temps i espai.</li>
+                    <li><b>Consistència:</b> L'ús de variables assegura que tots els elements que depenen d'una variable tinguin el mateix
+                        estil.</li>
+                </ol>
+                <p><b>3. Variables CSS amb valors per defecte</b></p>
+                <h4>Pots proporcionar un valor per defecte a les variables CSS en cas que no estiguin definides. Això és útil si vols
+                    assegurar-te que el disseny funcioni fins i tot si la variable falla o no es troba.</h4>
+                <center><img src="Captura de pantalla 2024-12-08 231137.png"></center>
+                <div class="grid3">
+                    <div class="element6">
+                        <p>Exemple complet amb variables CSS:</p>
+                        <p>En aquest exemple:</p>
+                        <ul>
+                            <li>S'utilitzen variables CSS per gestionar els
+                                colors, la mida del text i els marges.</li>
+                            <br>
+                            <li>El botó canvia de color quan es passa el
+                            ratolí per sobre, utilitzant les mateixes
+                            variables per a la seva transició.</li>
+                        </ul>
+                    </div>
+                    <div class="element6">                        
+                        <img src="Captura de pantalla 2024-12-08 231317.png">                        
+                    </div>
+                </div>
+                <hr>
+                <h2 id="animacionsitransicions">7. Animacions i transicions en CSS</h2>
+                <h5>Les <b>animacions i transicions</b> en CSS són eines potents que permeten afegir moviment i interacció visual a
+                    les pàgines web, millorant l'experiència de l'usuari. Amb aquestes tècniques, pots controlar com els
+                    elements canvien les seves propietats (com color, posició o opacitat) de manera suau i fluida.</h5>
+                <h4>1. Ús de transicions (transition)</h4>
+                <p>Les transicions CSS permeten que els canvis en les propietats d'un element, com el color, l'opacitat, la mida o la posició, siguin suaus en lloc de
+                    bruscos. Quan una propietat canvia, pots definir la velocitat del canvi utilitzant transition.</p>
+                <div class="grid3">
+                    <div class="element6">
+                        <p>Sintaxi bàsica de transition:</p>
+                        <img src="Captura de pantalla 2024-12-08 231702.png">
+                        <ol>
+                            <li><b>Propietat:</b> La propietat CSS que vols animar (ex. background-color, transform,
+                                opacity, etc.).</li>
+                            <li><b>Durada:</b> Quant de temps durarà la transició (ex. 0.5s, 2s).</li>
+                            <li><b>Funció de temporització:</b> Controla com serà la velocitat de la transició (ex. ease,
+                                linear, ease-in-out).</li>
+                            <li><b>Retard:</b> Opcional, defineix quant de temps trigarà a començar la transició (ex. 1s).</li>
+                        </ol>
+                    </div>
+                    <div class="element6"> 
+                        <p><b>Exemple de transició simple:</b></p>                       
+                        <img src="Captura de pantalla 2024-12-08 231846.png">                        
+                    </div>
+                </div>
+                <h4>2. Propietats de transició (transition-property)</h4>
+                <p>Si vols animar diverses propietats simultàniament, pots especificar-les individualment amb transition-property o
+                    utilitzar all per aplicar la transició a totes les propietats que canviïn.</p>
+                <center><p><b>Exemple animant múltiples propietats:</b></p></center>
+                <center><img src="Captura de pantalla 2024-12-08 232004.png"></center>
+                <p>En aquest exemple:</p>
+                <ul>
+                    <li>Quan es passa el ratolí per sobre del div, l'amplada s'animarà durant 1 segon i el
+                        color de fons durant 0.5 segons, amb funcions de temporització diferents.</li>
+                </ul>
+                <h4>3. Animacions clau amb @keyframes</h4>
+                <p>Les animacions en CSS permeten crear moviments més complexos que les transicions. Utilitzen la regla @keyframes
+                    per definir punts intermedis del moviment o canvi de propietat, i s'apliquen a través de la propietat animation.</p>
+                <div class="grid3">
+                    <div class="element6">
+                        <p>Sintaxi de @keyframes:</p>
+                        <img src="Captura de pantalla 2024-12-08 232223.png">
+                    </div>
+                    <div class="element6"> 
+                        <p><b>Sintaxi de animation:</b></p>                       
+                        <img src="Captura de pantalla 2024-12-08 232238.png">                        
+                    </div>
+                </div>
+                <p><b>Nom de l'animació:</b> El nom de l'animació definida amb @keyframes.</p>
+                <p><b>Durada:</b> El temps que durarà l'animació.</p>
+                <p><b>Funció de temporització:</b> Controla la velocitat de l'animació (linear, ease, etc.).</p>
+                <p><b>Retard:</b> Opcional, quant de temps trigarà a començar l'animació.</p>
+                <p><b>Cicles:</b> Quantes vegades es repetirà l'animació (infinite per repetir-la indefinidament).</p>
+                <p><b>Direcció:</b> Opcional, si l'animació es juga de manera normal o inversa (normal, reverse,
+                    alternate).</p>
+                <div class="grid3">
+                    <div class="element6">
+                        <img src="Captura de pantalla 2024-12-08 232520.png">
+                    </div>
+                    <div class="element6"> 
+                        <p><b>En aquest exemple:</b></p>  
+                        <ul>
+                            <li>L'element gira contínuament gràcies a
+                                l'animació girar, que dura 2 segons i es repeteix
+                                indefinidament (infinite).</li>
+                        </ul>                     
+                    </div>
+                </div>
+                <div class="grid3">
+                    <div class="element6">
+                        <p><b>4. Propietats d'animació (animation-duration, animation-
+                            delay)</b></p>
+                        <p>Les propietats d'animació et permeten personalitzar com es
+                            comporta una animació. Les més importants són:</p>
+                        <ul>
+                            <li><b>animation-duration:</b> Controla quant de temps dura
+                                l'animació.</li>
+                            <li><b>animation-delay:</b> Defineix un retard abans que
+                                l'animació comenci.</li>
+                            <li><b>animation-iteration-count:</b> Controla quantes vegades
+                                es repetirà l'animació (1, 3, infinite).</li>
+                            <li><b>animation-direction:</b> Defineix si l'animació es juga cap
+                                endavant (normal), cap enrere (reverse) o alterna
+                                (alternate).</li>
+                        </ul>    
+                    </div>
+                    <div class="element6"> 
+                        <img src="Captura de pantalla 2024-12-08 232732.png">                        
+                    </div>
+                </div>
+                <div class="grid3">
+                    <div class="element6">
+                        <p>En aquest exemple:</p>
+                        <ul>
+                            <li>El botó canvia de color de manera suau quan es
+                                passa el ratolí per sobre gràcies a la transició.</li>
+                            <li>El div es mou cap endavant i cap enrere de manera
+                                fluida gràcies a l'animació moure, que es repeteix
+                                indefinidament.</li>
+                            <img src="Captura de pantalla 2024-12-08 232846.png">
+                        </ul>    
+                    </div>
+                    <div class="element6"> 
+                        <img src="Captura de pantalla 2024-12-08 232854.png">                        
+                    </div>
+                </div>
+    </body> 
+</html>

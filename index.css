@@ -1,0 +1,82 @@
+body {
+    background-color: #780000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header div {
+    text-align: center;
+}
+
+header div a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #c1121f;
+    text-shadow: 
+        -1px -1px 0 rgb(0, 0, 0),  
+        1px -1px 0 rgb(0, 0, 0),
+        -1px  1px 0 rgb(0, 0, 0),
+        1px  1px 0 rgb(0, 0, 0);
+}
+
+
+section {
+    display: flex;
+    justify-content:left;
+}
+
+.container {
+    width: 35%;
+    height: auto;
+    margin-left: 100px;
+    border-radius: 20px;
+    background-color: #c1121f;
+    flex: 1 1 auto;
+}
+
+.container h3, h5, ol {
+    color: #fdf0d5;
+    margin: 20px;
+}
+
+
+#flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: center;
+    gap: 20px 80px;
+    margin-top: 50px;
+  }
+
+.container2 {
+    width: 35%;
+    height: auto;
+    margin-right: 100px;
+    border-radius: 20px;
+    background-color: #c1121f;
+    flex: 1 1 auto;
+}
+
+.container2 h3, h5, ol {
+    color: #fdf0d5;
+    margin: 20px;
+}
+
+.container a {
+    color: #fdf0d5;
+    text-decoration: none;
+}
+
+.container2 a {
+    color: #fdf0d5;
+    text-decoration: none;
+}

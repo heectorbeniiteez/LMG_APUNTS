@@ -4,26 +4,23 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="cssbasic.css">
             <title>CSS BÀSIC</title>           
         </head>
             <h2>Índex</h2>
         <ul>
-            <li><a>Introducció al CSS</a></li>
-            <li><a>Aplicació d'estils</a></li>
-            <li><a>Sintaxi bàsica del CSS</a></li>
-            <li><a>Propietats de text i fonts</a></li>
-            <li><a>Marges, farcits i vores</a></li>
-            <li><a>Color i fons</a></li>
-            <li><a>Dimencions i caixes</a></li>
-            <li><a>Posicionament Bàsic</a></li>
-            <li><a>Disseny bàsic amb Flexbox</a></li>
-            <li><a>Media Queries (Indroducció)</a></li>
+            <li><a href="#introducciocss">Introducció al CSS</a></li>
+            <li><a href="#aplicacioestils">Aplicació d'estils</a></li>
+            <li><a href="#sintaxicss">Sintaxi bàsica del CSS</a></li>
+            <li><a href="#propietats">Propietats de text i fonts</a></li>
+            <li><a href="#margesfarcitsivores">Marges, farcits i vores</a></li>
+            <li><a href="#colorifons">Color i fons</a></li>
+            <li><a href="#dimensions">Dimencions i caixes</a></li>
+            <li><a href="#posicionament">Posicionament Bàsic</a></li>
+            <li><a href="#flexbox">Disseny bàsic amb Flexbox</a></li>
         </ul>
         <hr>
-        <div>
-            <center><h2>1. Introducció al CSS</h2></center>
-        </div>
-        <section class="section1">
+            <h2 id="introducciocss">1. Introducció al CSS</h2>
             <table border="1" cellpadding="10" cellspacing="5">
                 <tr>
                     <td><b>Què és el CSS?</b></td>
@@ -33,7 +30,606 @@
                     disseny, colors, tipografia, espaiat i posicionament dels elements en una pàgina.</b></td>
                 </tr>
             </table>
-            <img src="css-cascading-style-sheets-acronym-600nw-1887245560.webp" width="300px" height="300px">
-        </section>
+            <h4><u>Importància del CSS en el desenvolupament web</u></h4>
+            <h5>El CSS és una peça fonamental del desenvolupament web, ja que permet separar la presentació visual del contingut estructural
+                d'una pàgina. Això ofereix una sèrie d'avantatges:</h5>
+                <ol>
+                    <li><b>Disseny i estètica millorats:</b> Amb CSS, pots aplicar estils atractius i professionals a les pàgines web, fent-les visualment
+                        atractives i més fàcils de llegir i navegar.</li>
+                    <li><b>Separació de contingut i estil:</b> Gràcies al CSS, és possible mantenir els estils de presentació (com colors, mides de text,
+                        marges) fora del codi HTML, el que facilita el manteniment i l'actualització del disseny sense afectar l'estructura del contingut.</li>
+                    <li><b>Facilitat de manteniment:</b> Amb un sol fitxer CSS, pots aplicar estils a múltiples pàgines web, estalviant temps i esforç quan es
+                        fan canvis de disseny. Això permet una actualització i un manteniment molt més eficient.</li>
+                    <li><b>Millor experiència d'usuari:</b> Amb el CSS es poden crear dissenys adaptables (responsive) que funcionen bé en diferents
+                        dispositius, com mòbils, tauletes i ordinadors de sobretaula. Aquest tipus de disseny millora significativament l’experiència de
+                        l’usuari.</li>
+                    <li><b>Rendiment i velocitat:</b> Utilitzar fitxers CSS externs pot ajudar a carregar les pàgines web més ràpidament, ja que els
+                        navegadors poden <b>emmagatzemar en memòria cau aquests fitxers i reutilitzar-los en diverses pàgines</b>, estalviant ample de
+                        banda i temps de càrrega.</li>
+                </ol>
+                <hr>
+            <h2 id="aplicacioestils">2. Aplicació d'estils</h2>
+            <h5>El CSS es pot aplicar a un document HTML de tres maneres principals: en línia, incrustat (dins de l'HTML) i extern
+                (mitjançant un fitxer CSS separat). Cadascuna d’aquestes formes té els seus propòsits i usos.</h5>
+            <br>
+            <h4><u>1. Estils en línia (Inline styles)</h4></u>
+            <h5>Els estils en línia s'apliquen directament a un element HTML, utilitzant l'atribut style dins de la mateixa etiqueta de
+                l'element. Aquest mètode és adequat per a aplicar estils a un sol element de manera ràpida, però no és recomanable
+                per a pàgines grans, ja que dificulta la mantenibilitat.</h5>
+            <center><img src="Captura de pantalla 2024-12-07 223032.png" width="50%" height="50%"></center>
+            <section>
+                <div class="grid">
+                    <div class="element">
+                        <h4>Avantatges:</h4>
+                        <h5>1. Aplicació ràpida i directa a l'element.</h5>
+                    </div>
+                    <div class="element">
+                        <img src="Captura de pantalla 2024-12-07 224318.png">
+                    </div>
+                    <div class="element">
+                        <img src="Captura de pantalla 2024-12-07 224325.png">
+                    </div>
+                    <div class="element">
+                        <h4>Inconvenients:</h4>
+                        <h5>1. Dificulta la mantenibilitat en llocs webs grans perquè caldria aplicar l'estil a cada element manualment.
+                            2. No aprofita la capacitat de reutilitzar els estils.</h5>
+                    </div>
+                </div>
+            </section>
+            <h4><u>2. Estils incrustats (Embedded styles)</h4></u>
+            <h5>Els estils incrustats es col·loquen dins de la secció HEAD d’un document HTML, dins d’una etiqueta STYLE. Aquests estils s'apliquen a tots els elements HTML de la pàgina actual.</h5>
+            <center><img src="Captura de pantalla 2024-12-07 232910.png" width="50%" height="50%"></center>
+            <section>
+                <div class="grid">
+                    <div class="element">
+                        <h4>Avantatges:</h4>
+                        <h5>1. Més eficient que els estils en línia, ja que es poden aplicar estils a diversos elements d'una mateixa pàgina des d'un sol lloc.</h5>
+                    </div>
+                    <div class="element">
+                        <img src="Captura de pantalla 2024-12-07 224318.png">
+                    </div>
+                    <div class="element">
+                        <img src="Captura de pantalla 2024-12-07 224325.png">
+                    </div>
+                    <div class="element">
+                        <h4>Inconvenients:</h4>
+                        <h5>1. Només afecta la pàgina on s’aplica, no es reutilitza entre diverses pàgines.
+                            2. Si la pàgina creix massa, pot fer més difícil la lectura i manteniment.</h5>
+                    </div>
+                </div>
+            </section>
+            <h4><u>3. Estils externs (External stylesheets)</h4></u>
+            <h5>Els estils externs s’emmagatzemen en un fitxer CSS separat, i s’enllacen al document HTML utilitzant l'etiqueta LINK dins de la secció HEAD. Aquest és el mètode més recomanat per a la majoria de llocs webs, especialment si consten de múltiples pàgines.</h5>
+            <center><div>
+                <img src="Captura de pantalla 2024-12-07 233342.png" width="30%" height="30%">
+                <img src="Captura de pantalla 2024-12-07 233349.png" width="30%" height="30%">
+            </div></center>
+                <section>
+                <div class="grid">
+                    <div class="element">
+                        <h4>Avantatges:</h4>
+                        <h5>1. Més eficient que els estils en línia, ja que es poden aplicar estils a diversos elements d'una mateixa pàgina des d'un sol lloc.</h5>
+                    </div>
+                    <div class="element">
+                        <img src="Captura de pantalla 2024-12-07 224318.png">
+                    </div>
+                    <div class="element">
+                        <img src="Captura de pantalla 2024-12-07 224325.png">
+                    </div>
+                    <div class="element">
+                        <h4>Inconvenients:</h4>
+                        <h5>1. Només afecta la pàgina on s’aplica, no es reutilitza entre diverses pàgines.
+                            2. Si la pàgina creix massa, pot fer més difícil la lectura i manteniment.</h5>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <h2 id="sintaxicss">3. Sintaxi bàsica del CSS</h2>
+                <div class="grid2">
+                    <div class="element2">
+                        <img src="Captura de pantalla 2024-12-07 234554.png" width="70%">
+                    </div>
+                    <div class="element3">
+                        <ol>
+                            <li style="color: blueviolet;"><b>Regla CSS:</b> és una instrucció que defineix com
+                                s'ha d'aplicar un estil a un o més elements HTML
+                                dins d'una pàgina web.</li>
+                            <li style="color: rgb(205, 201, 0);"><b>Selector:</b> Indica l'element HTML al qual
+                                s'aplicaran els estils.</li>
+                            <li style="color: green;"><b>Propietat:</b> Defineix la característica que vols
+                                modificar (com ara el color, la mida del text, el
+                                marge, etc.).</li>
+                            <li style="color: blue;"><b>Valor:</b> Assigna un valor específic a la propietat
+                                (com ara "blau" per al color, "16px" per a la mida
+                                del text, etc.).</li>
+                            <li><b>Declaració CSS</b> és una instrucció dins d'una regla
+                                CSS que defineix una característica específica d'estil
+                                per a un element HTML.</li>
+                        </ol>
+                    </div>
+                </div>
+                <h4>Selectors en CSS</h4>
+                <h5>Els <b>selectors</b> són una part fonamental del CSS perquè defineixen quins elements HTML seran afectats per les regles
+                    d'estil. Hi ha diversos tipus de selectors, però els més comuns en l'aprenentatge bàsic són:</h5>
+                <div class="grid3">
+                    <div class="element4">
+                        <ol>
+                            <li><b>Selector de tipus (Type Selector)</b></li>
+                            <p>Aquest selector aplica estils a tots els elements HTML del mateix
+                                tipus. Aquest codi aplicarà el color verd a tots els títols H1 de la
+                                pàgina.</p>
+                            <li><b>Selector de classe (Class Selector)</b></li>
+                            <p>Els selectors de classe permeten aplicar estils a elements HTML amb
+                                una classe específica. S’utilitza un punt (.) per seleccionar una
+                                classe. Qualsevol element HTML que tingui l'atribut class="mi-
+                                classe" tindrà un fons groc. Per exemple:</p>
+                            <li><b>Selector d'id (ID Selector)</b></li>
+                            <p>El selector d’id s’utilitza per aplicar estils a un únic element HTML
+                                que tingui un identificador específic. Es fa servir el símbol de la
+                                coixinera #. Aquest exemple centrarà el text de l’element que tingui
+                                id="mi-id". És important recordar que un ID ha de ser únic a la
+                                pàgina.</p>
+                            <li><b>Selector universal</b></li>
+                            <p>El selector universal (*) aplica estils a tots els elements d’una
+                                pàgina. Aquest exemple elimina els marges i farcits de <b>tots els
+                                elements</b> de la pàgina, cosa útil per establir un estil uniforme.</p>
+                        </ol>
+                    </div>
+                    <div class="element5">
+                        <img src="Captura de pantalla 2024-12-08 131840.png">
+                        <img src="Captura de pantalla 2024-12-08 133006.png">
+                    </div>
+                </div>
+                <h4><u>Conceptes importants</u></h4>
+                    <div class="grid5">
+                        <div class="element6">
+                            <img src="Captura de pantalla 2024-12-08 134900.png">
+                            <h3><b>Herencia</b></h3>
+                                <p>Aquest selector aplica estils a tots els elements HTML del mateix
+                                    tipus. Aquest codi aplicarà el color verd a tots els títols H1 de la
+                                    pàgina.</p>
+                            <img src="Captura de pantalla 2024-12-08 164822.png">
+                        </div>
+                        <div class="element6">
+                            <img src="Captura de pantalla 2024-12-08 165125.png">
+                            <h3><b>Especificitat</b></h3>
+                                <p>Quan hi ha conflictes d'estils, el
+                                    navegador aplica només el de més
+                                    especificitat.</p>
+                            <img src="Captura de pantalla 2024-12-08 165211.png">
+                        </div>
+                        <div class="element6">
+                            <img src="Captura de pantalla 2024-12-08 165322.png">
+                            <h3><b>Cascada</b></h3>
+                                <p>Tot estil sobreescriu un d'anterior.
+                                    La C de CSS significa Cascada.</p>
+                            <img src="Captura de pantalla 2024-12-08 165330.png">
+                        </div>
+                    </div>
+                <hr>
+                <h2 id="propietats">4. Propietats de text i fonts</h2>
+                <h5>El CSS permet controlar com es mostren els textos dins d’una pàgina web. Amb diverses propietats, podem canviar la
+                    font, el color, l'alineació, la mida del text, i altres aspectes visuals per tal de millorar la llegibilitat i l'estètica del
+                    contingut.</h5>
+                <table border="1" cellpadding="10" cellspacing="5">
+                    <tr>
+                        <td><b>1. Propietat font-family</b>
+                        <p>La propietat font-family defineix el tipus de lletra (tipografia) que s'utilitzarà per
+                            a un element de text. Pots especificar una o més fonts, i el navegador aplicarà la
+                            primera que estigui disponible al sistema de l'usuari.</p></td>
+                            <td><img src="Captura de pantalla 2024-12-08 170535.png"</td>
+                    </tr>
+                    <tr>
+                        <td><b>2. Propietat font-size</b>
+                        <p>La propietat font-size controla la mida de la lletra. Els valors es poden definir en
+                            diverses unitats, com píxels (px), ems (em), punts (pt), o percentatges (%).</p></td>
+                            <td><img src="Captura de pantalla 2024-12-08 171832.png"</td>
+                    </tr>
+                    <tr>
+                        <td><b>3. Propietat color</b>
+                        <p>La propietat color defineix el color del text. Es poden utilitzar noms de colors
+                            predefinits, valors en hexadecimal, o el sistema de colors RGB o RGBA.</p></td>
+                            <td><img src="Captura de pantalla 2024-12-08 171839.png"</td>
+                    </tr>
+                    <tr>
+                        <td><b>4. Propietat text-align</b>
+                        <p>La propietat text-align s'utilitza per controlar l'alineació del text dins d'un
+                            element. Els valors més comuns són left (esquerra), right (dreta), center
+                            (centrat) i justify (justificat).</p></td>
+                            <td><img src="Captura de pantalla 2024-12-08 171844.png"</td>
+                    </tr>
+                    <tr>
+                        <hr>
+                        <td><b>5. Propietat font-weight</b>
+                        <p>La propietat font-weight controla el gruix de la lletra. Els valors comuns són:</p>
+                        <ul>
+                            <li>normal: per defecte.</li>
+                            <li>bold: text en negreta.</li>
+                            <li>Números entre 100 i 900, on 400 és el valor per defecte i 700 representa
+                                negreta.</li>
+                        </ul></td>
+                            <td><img src="Captura de pantalla 2024-12-08 171850.png"</td>
+                    </tr>
+                    <tr>
+                    <hr>
+                        <td><b>6. Propietat font-style</b>
+                        <p>La propietat font-style controla l'estil de la font, com si el text serà normal o en
+                            cursiva.</p>
+                            <p>Els valors més comuns són:</p>
+                            <ul>
+                                <li>normal: Text normal.</li>
+                                <li>italic: Text en cursiva.</li>
+                                <li>oblique: Text inclinat.</li>
+                            </ul></td>
+                            <td><img src="Captura de pantalla 2024-12-08 171855.png"</td>
+                    </tr>
+                </table>
+                <h2 id="margesfarcitsivores">5. Màrges, farcits i vores en CSS</h2>
+                <h5>Els marges (margin), els farcits (padding) i les vores (border) són part del model de caixa en CSS, que descriu com
+                    es disposen els elements en la pàgina. Aquestes propietats permeten ajustar l'espai exterior i interior d'un element,
+                    així com definir-ne els límits visuals amb una vora.</h5>
+            <div class="grid4">
+                <div class="element4">
+                        <b>1. Marges (margin)</b>
+                        <p>La propietat margin controla l'espai exterior d'un element, és
+                            a dir, l'espai que hi ha entre un element i els altres elements
+                            que l’envolten. Els marges es poden definir de manera
+                            individual per a cadascun dels quatre costats de l'element
+                            (superior, dret, inferior, esquerre) o de manera global per a
+                            tots els costats alhora.</p>
+                        <b>2. Farcits (padding)</b>
+                        <p>La propietat padding controla l'espai interior d'un element, és
+                            a dir, l'espai entre el contingut d'un element (com text o
+                            imatges) i les seves vores. Igual que amb els marges, els farcits
+                            es poden definir per a tots els costats o per a cadascun
+                            individualment.</p>
+                        <b>3. Vores (border)</b>
+                        <p>La propietat border s'utilitza per afegir una vora al voltant
+                            d'un element. Aquesta propietat té diversos subatributs:</p>
+                            <ol>
+                                <li><b>amplada de la vora</b> (border-width): defineix el gruix de
+                                    la vora.</li>
+                                    <li><b>estil de la vora</b>(border-style): pot ser solid (sòlid),
+                                        dashed (ratllat), dotted (puntets), etc.</li>
+                                    <li><b>color de la vora</b>(border-color): especifica el color de la
+                                        vora.</li>
+                            </ol>
+
+                </div>
+                <div class="element6">
+                    <img src="Captura de pantalla 2024-12-08 185942.png">
+                    <img src="Captura de pantalla 2024-12-08 185953.png">
+                    <img src="Captura de pantalla 2024-12-08 190004.png">
+                </div>
+            </div>
+            <div class="grid4">
+                <div class="element7">
+                    <img src="Captura de pantalla 2024-12-08 190351.png">
+                </div>
+                <div class="element4">
+                    <p><b>Unitats comunes</b></p>
+                    <ol>
+                        <li><b>Píxels (px):</b></li>
+                            <ul>
+                                <li>Unitat fixa, representa un punt a la pantalla.</li>
+                                <li><b>Exemple:</b> margin: 20px;</li>
+                            </ul>
+                         <li><b>Ems (em):</b></li>
+                            <ul>
+                                <li>Unitat <b>relativa</b> a la mida de la font de l'element pare.</li>
+                                <li><b>Exemple:</b> padding: 2em; (2 vegades la mida de la font).</li>
+                            </ul>
+                        <li><b>Rems (rem):</b></li>
+                            <ul>
+                                <li>Unitat <b>relativa</b> a la mida de la font de l'element arrel (html).</li>
+                                <li><b>Exemple:</b> margin: 1.5rem; (1.5 vegades la mida de la font arrel).</li>
+                            </ul>
+                        <li><b>Percentatge (%):</b></li>
+                            <ul>
+                                <li>Relativa a l'amplada o alçada del contenidor pare.</li>
+                                <li><b>Exemple:</b> padding: 5%; (5% de l'amplada del contenidor).</li>
+                            </ul>
+                        <li><b>Viewports (vw, vh):</b></li>
+                            <ul>
+                                <li>Relativa a la mida de la finestra visible.</li>
+                                <li><b>Exemple:</b> margin: 5vw; (5% de l'amplada del viewport).</li>
+                            </ul>
+                        <li><b>Vores (border-width):</b></li>
+                            <ul>
+                                <li>Gruixos predeterminats: thin, medium, thick o valors com px.</li>
+                                <li><b>Exemple:</b> border: thick solid black;</li>
+                            </ul>
+                    </ol>
+                </div>
+            </div>
+            <h2 id="colorifons">6. Colors i fons en CSS</h2>
+                <h5>El CSS proporciona diverses propietats per aplicar colors i fons als elements HTML. Aquestes propietats són essencials
+                    per millorar l'aspecte visual i la llegibilitat de la pàgina web.</h5>
+                <table border="1" cellpadding="10" cellspacing="5">
+                    <tr>
+                        <td><b>1. Propietat color</b>
+                        <p>La propietat color s’utilitza per canviar el color del text dins d’un
+                            element. Pots definir els colors de diverses maneres:</p>
+                        <ol>
+                            <li><b>Noms de colors:</b> utilitzar noms predefinits com red, blue,
+                                green, etc.</li>
+                            <li><b>Colors hexadecimals:</b>utilitzar un codi hexadecimal que
+                                comença amb # seguit de sis caràcters (exemple: #FF0000
+                                per a vermell).</li>
+                            <li><b>RGB:</b> utilitzar valors de rgb() on cada component (vermell,
+                                verd, blau) s’especifica entre 0 i 255.</li>
+                                <li><b>RGBA:</b> igual que rgb(), però amb un quart valor per a l'opacitat
+                                    (valors entre 0.0 i 1.0).</li>
+                        </ol></td>
+                            <td><img src="Captura de pantalla 2024-12-08 191421.png"</td>
+                    </tr>
+                    <tr>
+                        <td><b>2. Propietat background-color</b>
+                        <p>La propietat background-color s’utilitza per establir el color de fons
+                            d’un element. Igual que la propietat color, pots definir colors
+                            utilitzant noms, valors hexadecimals, RGB o RGBA.</p></td>
+                                <td><img src="Captura de pantalla 2024-12-08 191507.png"</td>
+                        </tr>
+                        <tr>
+                            <td><b>3. Propietat background</b>
+                            <p>La propietat background és una manera abreujada d’especificar
+                                diverses propietats de fons alhora, com el color, la imatge de
+                                fons, la repetició, la posició, etc.</p></td>
+                                <td><img src="Captura de pantalla 2024-12-08 191538.png"</td>
+                        </tr>
+                        <tr>
+                            <td><b>4. Propietat background-image</b>
+                            <p>Aquesta propietat permet afegir una imatge com a fons d'un
+                                element. Pots especificar la ubicació de la imatge amb una URL.</p>
+                            <br>
+                            <p>Si vols que la imatge es repeteixi o es mostri d'una altra manera,
+                                pots utilitzar altres propietats complementàries:</p>
+                            <ol>
+                                <li><b>background-repeat:</b> Controla si la imatge de fons es repeteix.
+                                    Els valors poden ser repeat, no-repeat, repeat-x
+                                    (horitzontalment) o repeat-y (verticalment).</li>
+                                <li><b>background-position:</b> Defineix la posició de la imatge de fons
+                                    (per exemple, center, top, left).</li>
+                                <li><b>background-size:</b> Permet ajustar la mida de la imatge (per
+                                    exemple, cover o contain per adaptar-se a la mida de
+                                    l'element).</li>
+                            </ol></td>
+                                <td><img src="Captura de pantalla 2024-12-08 191736.png"</td>
+                    </table>
+                    <table border="1" cellpadding="10" cellspacing="5">
+                        <tr>
+                            <td>
+                                <b>Resum de les propietats vistes:</b>
+                                <ol>
+                                    <li><b>color:</b> Defineix el color del text.</li>
+                                    <li><b>background-color:</b> Estableix el color de fons d'un
+                                        element.<li>
+                                    <li><b>background-image:</b> Afegeix una imatge de fons a un
+                                        element.</li>
+                                    <li><b>background-repeat:</b> Controla la repetició de la imatge de
+                                        fons.</li>
+                                    <li><b>background-position:</b> Defineix la posició de la imatge de
+                                        fons.</li>
+                                    <li><b>background-size:</b> Ajusta la mida de la imatge de fons.</li>
+                                    <li><b>background:</b> Propietat abreujada que combina diverses
+                                        propietats de fons.</li>
+                                </ol>
+                            </td>
+                            <td>
+                                <img src="Captura de pantalla 2024-12-08 192502.png">
+                            </td>
+                        </tr>
+                    </table>
+                <h2 id="dimensions">7. Dimensions i caixes en CSS</h2>
+                    <h5>El CSS utilitza el model de caixa per representar els elements d'una pàgina web. Cada element es considera com una
+                        caixa rectangular que conté el contingut, farcits, marges i vores. És important entendre aquest model perquè
+                        controla com es distribueixen i s'ajusten els elements dins de la pàgina.</h5>
+                    <p>El model de caixa es compon de quatre parts principals:</p>
+                    <ol>
+                        <li><b>Contingut:</b> El contingut real de l'element, com text, imatges o altres elements.</li>
+                        <li><b>Farcit (padding):</b> L'espai entre el contingut i la vora.</li>
+                        <li><b>Vora (border):</b> El límit al voltant del farcit.</li>
+                        <li><b>Marge (margin):</b> El límit al voltant del farcit.</li>
+                    </ol>
+                <div class="grid4">
+                    <div class="element5">
+                        <ol><li><b>Propietats de dimensions (width i height)</b>
+                            <p>Les propietats width (amplada) i height (alçada) s’utilitzen per definir la mida d’un element. Aquests valors es
+                            poden definir en unitats fixes com píxels (px) o unitats relatives com percentatges (%), que depenen de la mida del
+                            seu element contenidor.</p></li>
+                            <li><b>El model de caixa en CSS</b>
+                            <p>El <b>model de caixa</b> estableix com es calculen les dimensions d'un element tenint en compte les propietats de marges, farcits, i vores. Per
+                                defecte, la mida de width i height només afecta el contingut. Per incloure el farcit i la vora dins de les dimensions de l'element, es pot utilitzar
+                                la propietat box-sizing.</p>
+                            <b>Propietat box-sizing</b>
+                            <p>La propietat box-sizing controla com es calculen les dimensions totals de l’element. Hi ha dues opcions principals:</p>
+                                <ol>
+                                    <li><b>content-box</b> (valor per defecte): Només inclou el contingut en les dimensions, mentre que les vores i els farcits s'afegeixen a part.</li>
+                                    <li><b>border-box:</b> Inclou el contingut, el farcit i la vora dins de les dimensions especificades.</li>
+                                </ol>
+                            <br>
+                            <li><b>Control del desbordament (overflow)</b>
+                                <p>Quan el contingut d'un element és més gran que les dimensions especificades, el CSS ofereix la propietat overflow per controlar com es
+                                    mostra el contingut que desborda.</p>
+                                <b>Els valors més comuns són:</b>
+                                    <ul>
+                                        <li><b>visible:</b> El contingut que desborda es mostra fora de l’element (valor per defecte).</li>
+                                        <li><b>hidden:</b> El contingut que desborda es retalla i no es mostra.</li>
+                                        <li><b>scroll:</b> Mostra barres de desplaçament, encara que el contingut no desbordi.</li>
+                                        <li><b>auto:</b> Mostra barres de desplaçament només si el contingut desborda.</li>
+                                    </ul>
+                        </ol>
+                    </div>
+                    <div class="element7">
+                        <img src="Captura de pantalla 2024-12-08 200545.png">
+                        <img src="Captura de pantalla 2024-12-08 200554.png">
+                        <img src="Captura de pantalla 2024-12-08 200559.png">
+                    </div>
+                </div>
+                <table border="1" cellpadding="10" cellspacing="5">
+                    <tr>
+                        <td>
+                            <b>Resum de les propietats vistes:</b>
+                            <ol>
+                                <li><b>width i height:</b> Defineixen les dimensions d'un
+                                    element.</li>
+                                <li><b>background-color:</b> E<li>
+                                <li><b>box-sizing:</b> Controla com es calculen les
+                                    dimensions totals d'un element tenint en compte
+                                    el farcit i la vora.</li>
+                                <li><b>overflow:</b> Controla com es maneja el contingut
+                                    que desborda les dimensions de l'element.</li>
+
+                            </ol>
+                        </td>
+                        <td>
+                            <img src="Captura de pantalla 2024-12-08 202328.png"">
+                        </td>
+                    </tr>
+                </table>
+            <h2 id="posicionament">8. Posicionament bàsic en CSS</h2>
+            <h5>El CSS ofereix diverses tècniques per controlar la ubicació dels elements en una pàgina web. La propietat clau per al posicionament és
+                position, que té diversos valors per a definir com es posiciona un element respecte al seu element contenidor o al document.</h5>
+            <p><b>1. La propietat position</b></p>
+            <p>La propietat position permet especificar el mètode de posicionament d’un element. Els valors més comuns són:</p>
+            <ol>
+                <li><b>static</b> (per defecte): Els elements es posicionen de manera normal, seguint el flux del document. No es pot ajustar manualment amb
+                    coordenades.</li>
+                <li><b>relative:</b> Es posiciona l'element respecte a la seva posició original en el flux del document. Es poden utilitzar coordenades per moure’l
+                    lleugerament (dalt, baix, esquerra o dreta).</li>
+                <li><b>absolute:</b> L'element es treu del flux del document i es posiciona respecte al seu element contenidor més proper que tingui una posició
+                    definida. Si no hi ha cap contenidor definit, es posiciona respecte a la pàgina.</li>
+                <li><b>fixed:</b> L'element es treu del flux del document i es posiciona respecte a la finestra del navegador. Es manté fix fins i tot quan l'usuari fa
+                    desplaçaments.</li>
+                <li><b>sticky:</b> L'element es comporta com relative fins que arriba a un punt en el desplaçament de la pàgina, després del qual es comporta
+                    com fixed.</li>
+            </ol>
+            <p><b>2. Propietats de posicionament (top, right, bottom, left)</b></p>
+            <p>Quan es defineix la propietat position com relative, absolute, fixed o sticky, pots utilitzar les propietats top, right, bottom, i left per
+                especificar la distància de l'element respecte als seus límits.</p>
+            <p><b>Exemples:</b></p>
+            <ul>
+                <li><b>top: 10px;:</b> Moure l'element 10 píxels cap avall des del límit superior.</li>
+                <li><b>right: 20px;:</b> Moure l'element 20 píxels cap a l'esquerra des del límit dret.</li>
+            </ul>
+            <img src="Captura de pantalla 2024-12-08 203050.png" width="60%">
+            <div class="grid4">
+                <div class="element5">
+                    <p><b>3. Posicionament absolut (position: absolute)</b></p>
+                    <p>Amb position: absolute, l'element es treu completament del flux
+                        normal del document i es posiciona respecte al seu element
+                        contenidor més proper amb position: relative, absolute, o fixed.</p>
+                    <br>
+                    <br>
+                    <p><b>4. Posicionament fix (position: fixed)</b></p>
+                    <p>Els elements amb position: fixed es mantenen en una ubicació fixa
+                        a la pantalla fins i tot quan l'usuari fa desplaçaments. Es
+                        posicionen respecte a la finestra del navegador.</p>
+                    <p><b>5. Posicionament enganxós (position: sticky)</b></p>
+                    <p>Els elements amb position: sticky es comporten com relative fins
+                        que l'usuari es desplaça per la pàgina i arriba a un punt
+                        especificat, després del qual l'element es comporta com fixed.</p>
+                    <p><b>6. Propietat z-index</b></p>
+                    <p>La propietat z-index es fa servir per controlar l'ordre de
+                        superposició dels elements posicionats (relative, absolute, fixed o
+                        sticky). Els valors més alts de z-index col·loquen l'element davant
+                        d'altres elements amb valors inferiors.</p>
+                </div>
+                <div class="element6">
+                    <img src="Captura de pantalla 2024-12-08 203252.png">
+                    <img src="Captura de pantalla 2024-12-08 203259.png">
+                    <img src="Captura de pantalla 2024-12-08 203649.png">
+                    <img src="Captura de pantalla 2024-12-08 203655.png">
+                </div>
+            </div>    
+            <h2 id="flexbox">9. Disseny bàsic amb Flexbox</h2>
+            <h5>Flexbox és un sistema de disseny en CSS que proporciona una manera molt eficient de distribuir l'espai entre els
+                elements i alinear-los dins d'un contenidor, fins i tot quan la mida dels elements és desconeguda o dinàmica. Flexbox
+                és ideal per crear dissenys de pàgines adaptatives, ja que facilita l'alineació, distribució i ordenació dels elements
+                dins d'un contenidor.</h5>
+            <table border="1" cellpadding="10" cellspacing="5">
+                <tr>
+                    <td>
+                        <p><b>1. El contenidor flex (display: flex)</b></p>
+                            <p>El punt de partida per utilitzar Flexbox és establir display: flex en
+                            l'element contenidor. Aquest contenidor es coneix com a <b>contenidor
+                            flex</b>, i els seus elements fills es coneixen com a <b>elements flex</b>. Un cop
+                            activat el display: flex, pots utilitzar diverses propietats per ajustar com
+                            es distribueixen els elements dins del contenidor.</p>
+                    </td>
+                    <td>
+                        <img src="Captura de pantalla 2024-12-08 205306.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><b>2. Direcció del flux (flex-direction)</b></p>
+                            <p>Per defecte, els elements flex es disposen en fila horitzontalment. Pots
+                            canviar la direcció amb la propietat flex-direction.</p>
+                        <p><b>Els valors més comuns són:</b></p>
+                        <ul>
+                            <li><b>row:</b> Els elements es col·loquen en fila (horitzontal) (valor per
+                                defecte).</li>
+                            <li><b>row-reverse:</b> Els elements es col·loquen en fila però en ordre
+                                invers.</li>
+                            <li><b>column:</b> Els elements es col·loquen en columna (vertical).</li>
+                            <li><b>column-reverse:</b> Els elements es col·loquen en columna però en
+                                ordre invers.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="Captura de pantalla 2024-12-08 205312.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><b>3. Alineació horitzontal (justify-content)</b></p>
+                            La propietat justify-content controla l'alineació dels elements al llarg de
+                            l'eix principal (horitzontal per defecte). Pots distribuir els elements flex de
+                            diferents maneres dins del contenidor.</p>
+                        <p><b>Els valors més comuns són:</b></p>
+                        <ul>
+                            <li><b>flex-start:</b> EEls elements s'alineen al començament del contenidor.</li>
+                            <li><b>flex-end:</b> Els elements s'alineen al final del contenidor.</li>
+                            <li><b>center:</b> Els elements es centren dins del contenidor.</li>
+                            <li><b>space-between:</b> EEs distribueixen uniformement amb espai entre ells.</li>
+                            <li><b>space-around:</b>Els elements tenen espai al voltant de cadascun.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="Captura de pantalla 2024-12-08 205316.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><b>4. Alineació vertical (align-items)</b></p>
+                            <p>La propietat align-items controla l'alineació dels elements al llarg de l'eix
+                            transversal (vertical si la direcció és horitzontal). Aquesta propietat
+                            determina com s'alineen els elements flex dins del contenidor en relació
+                            amb la seva alçada.</p>
+                        <p><b>Els valors més comuns són:</b></p>
+                        <ul>
+                            <li><b>stretch:</b> Els elements s'estiren per omplir el contenidor (valor per
+                                defecte).</li>
+                            <li><b>flex-start:</b> EEls elements s'alineen a la part superior del contenidor.</li>
+                            <li><b>flex-end:</b> Els elements s'alineen a la part inferior del contenidor.</li>
+                            <li><b>center:</b> Els elements es centren verticalment dins del contenidor.</li>
+                            <li><b>baseline:</b> Els elements s'alineen segons la seva línia de base de text.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="Captura de pantalla 2024-12-08 205323.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><b>5. Control de l'espai que ocupa cada element (flex-grow)</b></p>
+                            <p>La propietat flex-grow especifica com els elements flex creixen dins del contenidor per ocupar l'espai disponible. Cada element es pot assignar
+                            un valor numèric que indica quant ha de créixer en relació amb els altres elements. Si tots els elements tenen flex-grow: 1, l'espai disponible
+                            es distribuirà de manera uniforme.</p>
+                    </td>
+                </tr>
+            </table>    
+            <img src="Captura de pantalla 2024-12-08 205328.png" width="80%">
     </body>
 </html>
